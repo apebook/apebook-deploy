@@ -14,9 +14,18 @@ var config = {
     //log所在的目录
     "logDir": path.join(__dirname,'..', 'log'),
     //静态文件所在的目录
-    "staticDir": path.join(__dirname,'..', 'public')
-    
-
+    "staticDir": path.join(__dirname,'..', 'public'),
+    "root":'/root/www',
+    "oss":{
+        accessKeyId: 'R7wBScg51UDJv06B',
+        accessKeySecret: '8rkUyvVcDbNFOBsxnxRdGGGhg6qyZb',
+        bucket: 'apebook',
+        region: 'oss-cn-hangzhou'
+    },
+    "ossBuckets":{
+        asset: 'apebook-asset',
+        book: 'apebook-book'
+    }
 };
 
 //当NODE_ENV环境变量值为local时

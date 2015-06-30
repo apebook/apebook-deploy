@@ -2,5 +2,6 @@
 var path = require('path');
 module.exports = {
     "env":"local",
-    "debug": true
+    "debug": true,
+    "root":'.'
 };

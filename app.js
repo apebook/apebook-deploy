@@ -16,8 +16,13 @@ app.use(function *(next){
 var Logger = require('mini-logger');
 app.context.logger = Logger({
     dir: config.logDir,
+    categories:['hook'],
     format: 'YYYY-MM-DD-[{category}][.log]'
 });
+
+//oss存储
+var oss = require('./helper/oss');
+app.context.oss = oss.connect(config.oss);
 
 var onerror = require('koa-onerror');
 onerror(app);
