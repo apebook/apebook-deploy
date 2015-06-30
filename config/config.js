@@ -8,7 +8,7 @@ var config = {
     "env":"production",
     "appName": "apebook-deploy",
     //端口号配置
-    "port": 3000,
+    "port": 3200,
     //模板所在的目录
     "viewDir": path.join(__dirname,'..','view'),
     //log所在的目录
